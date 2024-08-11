@@ -1,3 +1,5 @@
+"use client";
+
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -48,7 +50,7 @@ const cards: CardType[] = [
 const Revolusi = () => {
     return ( 
         <>
-        <div className="md:mt-56 mt-40 flex flex-col justify-center items-center text-center relative lg:w-[66vw] mx-auto   responsive-padding">
+        <div className="md:mt-56 mt-40 flex flex-col justify-center items-center text-center relative xl:w-[66vw] mx-auto   responsive-padding">
         <h2 className="mt-4 lg:text-[64px] text-[32px] leading-[100%]">
             Revolusi Digital Anda <br />
             Bermula Di Sini
@@ -73,7 +75,7 @@ const HorizontalScrollCarousel = () => {
     useEffect(() => {
         // Check if the screen is mobile size
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // Mobile breakpoint
+            setIsMobile(window.innerWidth <= 1024); // Mobile breakpoint
         };
 
         // Run the check on mount

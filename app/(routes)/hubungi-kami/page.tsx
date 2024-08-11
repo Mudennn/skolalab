@@ -1,3 +1,5 @@
+"use client";
+
 import { AiOutlineHome, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 
 const HubungiKami = () => {

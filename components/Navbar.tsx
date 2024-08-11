@@ -64,13 +64,13 @@ const Navbar = () => {
   // const scope = useMenuAnimation(isMenuOpen);
 
   return (
-    <motion.nav className="py-8 relative text-white z-10">
+    <motion.nav className="lg:py-8 py-4 relative text-white z-10">
       {/* <div className="h-full md:w-[70%] w-[90%] bg-white/10 backdrop-blur-30 border border-white-opacity-10 backdrop-blur-sm  rounded-[32px] mx-auto py-[8px] px-[24px] flex justify-between items-center"> */}
-      <div className="h-full md:w-[70%] w-[90%]  mx-auto py-[8px] px-[24px] flex justify-between items-center">
+      <div className="h-full lg:w-[70%]  w-[90%]  mx-auto py-[8px] px-[24px] flex justify-between items-center">
           <a href="/" className="lg:text-3xl text-lg font-bold text-left"><img src="/images/sekolalabs.webp" alt="" className="w-[100px]"/></a>
         <div className="flex justify-between items-center  ">
-          <div  className={`md:static absolute  bg-white md:bg-transparent md:text-white text-black md:items-center items-start md:gap-8 gap-4 min-h-fit md:left-none md:top-none left-1/2 -translate-x-1/2 md:translate-x-0 top-[-1000px] md:w-auto w-[90%] md:h-auto flex md:flex-row flex-col md:justify-end md:rounded-none rounded-[8px] justify-start md:p-0 p-5${isMenuOpen ? 'block top-[100px] p-5' : 'hidden'}`}>
-          <ul className="flex  md:flex-row flex-col md:items-center md:gap-8 gap-4 ">
+          <div  className={`xl:static absolute  bg-white xl:bg-transparent xl:text-white text-black xl:items-center items-start xl:gap-8 gap-4 min-h-fit xl:left-none xl:top-none left-1/2 -translate-x-1/2 xl:translate-x-0 top-[-1000px] xl:w-auto w-[90%] xl:h-auto flex xl:flex-row flex-col xl:justify-end xl:rounded-none rounded-[8px] justify-start xl:p-0 p-5${isMenuOpen ? 'block top-[100px] p-5' : 'hidden'}`}>
+          <ul className="flex  xl:flex-row flex-col xl:items-center xl:gap-8 gap-4 ">
             <li>
               <a href="/tentang-kami"> Tentang Kami</a>
             </li>
@@ -83,7 +83,7 @@ const Navbar = () => {
           </button>
           </div>
         </div>
-        <IoMenuOutline onClick={handleMenuToggle} className="text-3xl cursor-pointer md:hidden"/>
+        <IoMenuOutline onClick={handleMenuToggle} className="text-3xl cursor-pointer xl:hidden block"/>
       </div>
     </motion.nav>
     
